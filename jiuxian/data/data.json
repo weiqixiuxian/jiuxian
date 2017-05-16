@@ -1,0 +1,24 @@
+{
+	"result":{
+		"li":[
+			{
+				"id" : "1008601",
+				"name": "【超级秒杀日】西班牙进口红酒 圣霞多·爱肯特斯干红葡萄酒 750ml（双瓶装）+5件套酒具木盒",
+				"price":89,
+				"gold":44,
+				"quentity":1,
+				"image":"img/table1.jpg",
+				"checked":false
+			},
+			{
+				"id" : "1008602",
+				"name": "53°茅台王子酒500ml（双瓶装）",
+				"price":256,
+				"gold":128,
+				"quentity":1,
+				"image":"img/table2.jpg",
+				"checked":false
+			}
+		]
+	}
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车-酒仙网</title>
+	<link rel="stylesheet" type="text/css" href="css/car.css">
+	<script src="js/vue.js"></script>
+	<script src="js/vue-resource.min.js"></script>
+	<script src="js/car.js"></script>
+</head>
+<body>
+	<div class="top">
+		<div class="topBox">
+			<div class="topLeft fl">
+				<a href="">Hi 请登录</a>
+				<a href="">免费注册</a>
+			</div>
+			<div class="topRight fr">
+				<a href="">我的订单</a><i></i>
+				<a href="">我的酒仙网</a><i></i>
+				<span>客服热线</span>
+				<strong>400-617-9999</strong>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="headerBox">
+			<img src="img/logo.png" alt="" class="fl">
+			<div class="headerRight fr">
+				<div class="fr"></div>
+				<div>
+					<p>
+						<span class="fr">我的购物车</span>
+						<span class="fr">确认订单信息</span>
+						<span class="fr">成功提交订单</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shoppingCar">
+		<div class="carTop">
+			<p>
+			<i class="cartIcon"></i>
+			<strong>温馨提示：自营商品实付满100免运费，偏远地区满1000免运费</strong>
+			</p>
+		</div>
+		<div class="carContent" id="app">
+			<div class="carTitle">
+				<strong class="fl">购物车</strong>
+				<a href="" class="fl">
+					<s></s>
+					<strong>广东省</strong>
+				</a>
+				<p class="fl">
+					<span>现在</span>
+					<a href="">登陆</a>
+					<span>，您购物车中的商品将被永久保存</span>
+				</p>
+			</div>
+			<div class="carHeader">
+				<div class="">
+					<a href="javascript:;" :class="{'on':checkAll }"
+					@click="checkall"></a><span>全选</span>
+				</div>
+				<div>商品名称</div>
+				<div>酒仙价</div>
+				<div>送金币</div>
+				<div>数量</div>
+				<div>商品合计</div>
+				<div>操作</div>
+			</div>
+			<div class="liHeader">
+				<div class="liHeaderLeft fl">
+					<i class="shopIcon fl"></i>
+					<span class="fl">酒仙自营</span>
+				</div>
+				<div class="liHeaderRight fr">
+					<p>满<span>100元</span>包邮（新疆、西藏满<span>1000元</span>包邮）</p>
+				</div>
+			</div>
+			<div class="carTabBox" >
+				<table  cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr v-for="(item,index) in myList">
+							<td class="CT-check">
+								<a href="javascript:;" :class="{'on':item.checked }" @click="jianchaCheck(item)"></a>
+							</td>
+							<td class="CT-name">
+								<div class="img fl">
+									<a href="">
+										<img :src="item.image" alt="" class="img">
+									</a>
+								</div>
+								<div class="content">
+									<p>
+										<a href="">{{item.name}}</a>
+									</p>
+									<p>限时购</p>
+								</div>
+							</td>
+							<td class="CT-money">￥{{item.price}}.00</td>
+							<td class="CT-gold"><span>{{item.gold}}</span>金币</td>
+							<td class="CT-number">
+								<div class="numbBox">
+									<i class="cartIcon" @click="add(item,-1)"></i>
+									<input type="text" value="1" v-model="item.quentity" @blur="calc()">
+									<i class="cartIcon" @click="add(item,1)"></i>
+								</div>
+							</td>
+							<td class="CT-price">￥{{item.price*item.quentity}}.00</td>
+							<td class="CT-del">
+								<div>
+									<a href="javascript:;" @click="del(index)">删除</a>
+									<a href="">收藏</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="countMoney">
+				<div class="fl">
+					<a href="javascript:;" class="CKall" :class="{'on':checkAll }"
+					@click="checkall"></a><span>全选</span>
+				</div>
+				<div class="fl"><a href="javascript:;" @click="del(-1)">删除选择商品</a></div>
+				<div class="fl"><a href="">清空购物车</a></div>
+				<a href="javascript:;" class="countSubmit fr">去结算</a>
+				<div class="countSum fr">
+					<b>总计（不含运费）：</b>
+					<span class="sumMoney">￥{{totalmenoy}}.00 </span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

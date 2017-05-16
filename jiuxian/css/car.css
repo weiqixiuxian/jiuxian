@@ -1,0 +1,331 @@
+body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding: 0;}
+body {
+  font-size: 12px;
+  color: #666;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+td,th{
+	display: table-cell;
+    vertical-align: inherit;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.shopIcon{
+	background: url(../img/shopIcon.png) no-repeat 0 0;
+	display:inline-block
+}
+.cartIcon{
+	background: url(../img/cartIcon-gw-24.png);
+	display:inline-block;
+}
+.top{
+	width: 100%;
+	height: 26px;
+	background: #f6f6f6;
+}
+.topBox{
+	width:1000px;
+	line-height: 26px;
+	margin:0 auto;
+}
+.topBox a:hover{
+	text-decoration:underline;
+	color:#cc0001
+}
+.topRight i {
+	background: #cfcfcf;
+    width: 1px;
+    font-size: 0;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    margin: 8px 5px 0;
+}
+.topRight strong{
+	color: #ca1926;
+    font-style: italic;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    padding-left: 5px;
+}
+.header{
+	width:100%;
+	height: 70px;
+	padding-top: 20px;
+}
+.headerBox{
+	width:1000px;
+	margin:0 auto;
+}
+.headerBox .headerRight div:first-child{
+	background: url(../img/1-2-3.png) no-repeat;
+	width: 396px;
+    height: 27px;
+    margin: 20px 26px 8px 16px;
+    
+}
+.headerBox .headerRight span{
+	margin-left: 117px;
+}
+.shoppingCar{
+	width: 1000px;
+    margin: 20px auto 0;
+    position: relative;
+}
+.carTop{
+	padding: 8px 60px;
+    background: #fff5f5;
+    border: 1px solid #e6393d;
+    text-align: center;
+}
+.carTop i{
+	background-position: -1px -292px;
+	width: 21px;
+    height: 22px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.carTop p{
+	line-height: 20px;
+	vertical-align: middle;
+	color: #e6393d;
+}
+.carTitle>strong{
+	font-size: 20px;
+	line-height: 48px;
+	color:#000;
+	font-weight: normal;
+}
+.carTitle>a{
+	padding: 0 12px;
+	line-height: 48px;
+	margin-left: 15px;
+	position: relative;
+}
+.carTitle>a>strong{
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: normal;
+}
+.carTitle>a>s{
+	width: 1px;
+    font-size: 0;
+    height: 18px;
+    background: #ccc;
+    display:block;
+    height: 20px;
+    position: absolute;	
+    left: -2px;
+    top: 15px;
+}
+.carTitle p{
+	margin-left: 20px;
+	line-height: 48px;
+	font-size: 13px;
+}
+.carTitle p a{
+	font-size: 13px;
+	color:#3366cc;
+	padding:5px 0;
+}
+.carHeader{
+	clear: both;
+	height: 35px;
+	line-height: 35px;
+    border: 1px solid #e4e4e4;
+    border-left: 2px solid #e6393d;
+    background: #fbfbfb;	
+}
+.carHeader div{
+	float: left;
+	text-align: center;
+	width:120px;
+}
+.carHeader a{
+	margin: 12px 10px 0 0;
+}
+.carHeader div:nth-of-type(1){
+	width:58px;
+	padding-left:9px;
+}
+.carHeader div:nth-of-type(2){
+	width:366px;
+	text-indent: 60px;
+}
+.carHeader div:nth-of-type(3){
+	width:102px;
+}
+.carHeader div:nth-of-type(4){
+	width:102px;
+}
+.liHeader{
+	height: 36px;
+	padding-left: 11px;
+	line-height: 36px;
+	margin-top: 15px;
+}
+.liHeaderLeft i{
+	background-position: 0 0;
+    width: 16px;
+    height: 16px;
+    margin:0 6px 0 0;
+}
+.liHeaderLeft span{
+	font-weight: bolder;
+    color: #666666;
+    line-height: 16px;
+}
+.liHeaderRight span{
+	color:#e6393d;
+}
+.carTabBox{
+	width:998px;
+	border: 1px solid #e4e4e4;
+    border-top: 2px solid #b7b7b7;
+}
+.carTabBox td{
+	height: 86px;
+	text-align: center;
+	width:120px;
+}
+.carTabBox .CT-check{
+	width:58px;
+	padding-left: 10px;
+	text-align: left;
+}
+.carTabBox .CT-name{
+	width:366px;
+	text-align: left;
+}
+.carTabBox .CT-money{
+	width:102px;
+}
+.carTabBox .CT-money{
+	width:102px;
+}
+.carTabBox .CT-gold{
+	width:102px;
+}
+.CT-name .img{
+	width:54px;
+	height: 54px;
+}
+.content p a{
+	color:#333;
+}
+.content{
+	height: 52px;
+	position: relative;
+}
+.content p:first-child{
+	width:300px;
+	line-height: 26px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.content p:last-child{
+	display: inline-block;
+    line-height: 16px;
+    color: #e6393d;
+    margin-right: 6px;
+    padding: 0 3px 0 4px;
+    border: 1px solid #e6393d;
+    background-color: #fff;
+    position: absolute;
+    left:54px;
+    bottom:0;
+}
+.numbBox{
+	margin: 0 auto;
+    width: 72px;
+    border: 1px solid #ccc;
+    height: 20px;
+    clear: both;
+}
+.numbBox i{
+	width:21px;
+	height: 20px;
+	cursor: pointer;
+	float: left;
+}
+.numbBox input{
+	width: 30px;
+	height: 20px;
+	border:none;
+	text-align: center;
+	float: left;
+}
+.numbBox i:first-child{
+	background-position: 0 -71px;
+}
+.numbBox i:last-child{
+	background-position: -30px -71px;
+}
+.CT-del div{
+	width: 120px;
+    height: 60px;
+    position: relative;
+    padding-top: 20px;
+}
+.CT-del div a{
+	display:block;
+}
+.CT-price{
+	color: #e6393d;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+.countMoney{
+	margin-top: 20px;
+	height: 46px;
+    line-height: 46px;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+.countMoney div{
+	margin-right: 18px;
+}
+.countMoney div input{
+	margin: 17px 10px 0 10px;
+}
+.countMoney .countSubmit{
+	display: inline-block;
+    line-height: 48px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    background: #e2010f;
+    font-weight: bold;
+    font-size: 20px;
+}
+.countMoney .countSum span{
+	color: #cf010e;
+    font-size: 18px;
+    font-weight: bold;
+}
+.CT-check a,.carHeader a,.countMoney .CKall{
+	float: left;
+	display: block;
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+.CKall{
+	margin:15px 10px 10px
+}
+.CT-check .on,.carHeader .on, .countMoney .on{
+	background: red;
+}
